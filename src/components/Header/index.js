@@ -2,13 +2,15 @@
 /* eslint-disable react-native/no-inline-styles */
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import { SafeAreaView } from 'react-native';
+import { SafeAreaView, StatusBar } from 'react-native';
 import {Box, Title, Touchable} from '../../components';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { colors } from '../../styles/theme.json';
 
 const Header = ({title}) => {
   return (
+    <>
+    <StatusBar barStyle="default" />
     <Box fluid height="100px" justify="center" border={`1px solid ${colors.muted}50`} >
         <SafeAreaView style={{
             flexDirection: 'row',
@@ -28,6 +30,8 @@ const Header = ({title}) => {
         <Touchable  width="80px" />
         </SafeAreaView>
     </Box>
+    </>
+
   );
 };
 

@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import {Box, ScrollView, Text} from '../../components';
+import Story from '.';
 
 const StoryList = () => {
   return (
@@ -23,7 +24,7 @@ const StoryList = () => {
             paddingLeft: 20,
         }}
         >
-            {Array.from(Array(20))?.map(item => <Text style={{marginRight: 10}}>Story</Text>)}
+            {Array.from(Array(20))?.map(item => <Story/>)}
         </ScrollView>
 
     </Box>

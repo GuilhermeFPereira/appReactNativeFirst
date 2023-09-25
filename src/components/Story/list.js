@@ -5,7 +5,7 @@ import Story from '.';
 
 const StoryList = () => {
   return (
-    <Box fluid >
+    <Box fluid height="265px" >
         <Box row
         fluid
         justify="space-between"
@@ -18,7 +18,7 @@ const StoryList = () => {
          <Text color="danger" underline>
             Show All
          </Text>
-        </Box>
+        </Box >
         <ScrollView horizontal
         style={{
             paddingLeft: 20,

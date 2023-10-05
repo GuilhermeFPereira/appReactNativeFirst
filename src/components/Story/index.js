@@ -30,7 +30,7 @@ const Story = () => {
            image="https://static.ndmais.com.br/2023/02/margot.jpeg" />
 
             <Box height="50px" justify="flex-end">
-              <Text bold color="light" >Rodolfinho</Text>
+              <Text bold color="light" >Tim Maia</Text>
               <Text color="light" variant="small" >2 min ago</Text>
             </Box>
         </Box>

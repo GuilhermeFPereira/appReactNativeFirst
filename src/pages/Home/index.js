@@ -1,11 +1,13 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
+import { StatusBar } from 'react-native';
 
 import {Title, Text, Button, Box, Spacer} from '../../components';
 
 const Home = () => {
   return (
-
+    <>
+    <StatusBar barStyle="light-content" />
     <Box  background="dark" hasPadding align="center" >
 
       <Box justify="center" align="center" fluid>
@@ -24,6 +26,7 @@ const Home = () => {
       </Box>
 
     </Box>
+    </>
 
   );
 };

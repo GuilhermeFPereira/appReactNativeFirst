@@ -4,7 +4,7 @@ import { StatusBar } from 'react-native';
 
 import {Title, Text, Button, Box, Spacer} from '../../components';
 
-const Home = () => {
+const Home = ( { navigation } ) => {
   return (
     <>
     <StatusBar barStyle="light-content" />
@@ -17,11 +17,12 @@ const Home = () => {
       </Box>
 
       <Box justify="flex-end" align="center" fluid>
-      <Button block>
+      <Button block onPress={()=> navigation.navigate('SignIn')}>
+
         <Text color="light" >Sign my Account</Text>
       </Button>
       <Spacer size="20px" />
-      <Text underline color="light" >Create new Account</Text>
+      <Text underline color="light" onPress={()=> navigation.navigate('SignUp')} >Create new Account</Text>
       <Spacer size="70px"/>
       </Box>
 

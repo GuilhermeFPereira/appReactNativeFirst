@@ -5,7 +5,7 @@ import {Box, Spacer, Text, Title, Button, Input} from '../../components';
 import { StatusBar } from 'react-native';
 
 
-const SignIp = () => {
+const SignIp = ({ navigation: {navigate} }) => {
   return (
     <>
     <StatusBar barStyle="light" />
@@ -25,13 +25,13 @@ const SignIp = () => {
 
       <Spacer size="50px" />
 
-      <Button block>
+      <Button block onPress={() => navigate('Feed')} >
         <Text color="light" >Sign my Account</Text>
       </Button>
 
 
       <Spacer size="20px" />
-      <Text underline >Create new Account</Text>
+      <Text underline onPress={()=> navigate('SignUp')} >Create new Account</Text>
     </Box>
     </>
   );
